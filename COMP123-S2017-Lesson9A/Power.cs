@@ -27,8 +27,8 @@ namespace COMP123_S2017_Lesson9A
         /// <param name="rank"></param>
         public Power(string name,int rank)
         {
-            this.Name = Name;
-            this.Rank = Rank;
+            this.Name = name;
+            this.Rank = rank;
         }
     }
 }
