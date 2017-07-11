@@ -7,7 +7,7 @@ using System.Text;
  * Date: July 11, 2017
  * Description: This is the new power data type
  * derive from
- * Version: 0.1 Power class created
+ * Version: 0.2 Add a custom constructor to add name and rank
  */
 namespace COMP123_S2017_Lesson9A
 {
@@ -16,7 +16,19 @@ namespace COMP123_S2017_Lesson9A
     /// </summary>
     public class Power
     {
+        // Public Properties
         public string Name { get; set; }
         public int Rank { get; set; }
+        //CONSTRUCTORS ---------------------
+        /// <summary>
+        /// This is the power constructor. Takes two parameters- name(string) and rank (int)
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="rank"></param>
+        public Power(string name,int rank)
+        {
+            this.Name = Name;
+            this.Rank = Rank;
+        }
     }
 }

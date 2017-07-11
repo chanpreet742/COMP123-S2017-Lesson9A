@@ -21,7 +21,13 @@ namespace COMP123_S2017_Lesson9A
         private List<Power> _powers;
 
         //PUBLIC PROPERTIES
-
+        public List<Power> Powers
+        {
+            get
+            {
+                return this._powers;//returns a reference to the powers list          
+            }
+        }
 
         //CONSTRUCTORS
         public SuperHuman(string name)
