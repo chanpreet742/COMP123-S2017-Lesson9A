@@ -16,7 +16,7 @@ namespace COMP123_S2017_Lesson9A
         static void Main(string[] args)
         {
             SuperHuman superHuman = new SuperHuman("Superdude");
-            superHuman.Powers.Add(new Power());
+            superHuman.Powers.Add(new Power("Teleportation",50)); //Setting up anonymous object
         }
     }
 }

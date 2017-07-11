@@ -7,7 +7,7 @@ using System.Threading.Tasks;
  * Name: chanpreet mudhar
  * Date: July 11, 2017
  * Description: This is the SperHuman subcass 
- * Version: 0.2 Added private initialize method
+ * Version: 0.3 Added public AddPower method 
  */
 namespace COMP123_S2017_Lesson9A
 {
@@ -44,5 +44,14 @@ namespace COMP123_S2017_Lesson9A
             this._powers = new List<Power>();
         }
         //PUBLIC METHODS
+        /// <summary>
+        /// This method adds a power to the power list.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="rank"></param>
+        public void AddPower(string name, int rank)
+        {
+            this.Powers.Add(new Power(name, rank));
+        }
     }
 }
