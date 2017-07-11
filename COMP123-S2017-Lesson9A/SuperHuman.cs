@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 /*
  * Name: chanpreet mudhar
  * Date: July 11, 2017
- * Description: This is the abstract class Human which other subclasses will
- * derive from
- * Version: 0.1 class created
+ * Description: This is the SperHuman subcass 
+ * Version: 0.2 Added private initialize method
  */
 namespace COMP123_S2017_Lesson9A
 {
@@ -19,7 +18,7 @@ namespace COMP123_S2017_Lesson9A
     class SuperHuman : Human
     {
         //PRIVATE FIELDS
-
+        private List<Power> _powers;
 
         //PUBLIC PROPERTIES
 
@@ -28,7 +27,15 @@ namespace COMP123_S2017_Lesson9A
         public SuperHuman(string name)
             :base(name)
         {
-
+            this._initialize();
+        }
+        //PRIVATE METHODS
+        /// <summary>
+        /// This method initializes and assigns default values
+        /// </summary>
+        private void _initialize()
+        {
+            this._powers = new List<Power>();
         }
         //PUBLIC METHODS
     }
